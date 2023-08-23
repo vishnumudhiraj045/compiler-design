@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+
+#define MAX_PRODUCTIONS 10
+#define MAX_SYMBOLS 10
+
+char nonTerminals[MAX_SYMBOLS];
+char productions[MAX_SYMBOLS][MAX_PRODUCTIONS][MAX_SYMBOLS];
+int numProductions[MAX_SYMBOLS];
+
+bool isAmbiguous = false;
+
+void checkAmbiguity() {
+   
+}
+
+int main() {
+    
+    checkAmbiguity();
+
+    if (isAmbiguous) {
+        printf("The grammar is ambiguous.\n");
+    } else {
+        printf("The grammar is not ambiguous.\n");
+    }
+
+    return 0;
+}
